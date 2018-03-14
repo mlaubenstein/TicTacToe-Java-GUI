@@ -6,7 +6,11 @@ public class StatusField {
     private List<Boolean> AlreadyPressed = new ArrayList<> ();
     private SettingSymbolPlayer settingSymbolPlayer = new SettingSymbolPlayer ();
 
-
+    /**
+     * Checking if the field is already pressed
+     * @param fieldPressed
+     * passes the pressed field passed from the ActionListener
+     */
     public void Input( int fieldPressed) {
 
         for( int i = 0; i<=9; i++ ){

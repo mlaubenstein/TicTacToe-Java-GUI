@@ -4,7 +4,9 @@ import javax.swing.*;
 
 public class TicTacToeFrame extends JFrame {
 
-
+    /**
+     * formatting the display window
+     */
     TicTacToeFrame(){
 
         setTitle ( "TicTacToe mal anders ?" );

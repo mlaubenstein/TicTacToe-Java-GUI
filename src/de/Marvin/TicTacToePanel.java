@@ -24,53 +24,56 @@ public class TicTacToePanel extends JPanel {
 
     StatusField statusField = new StatusField ();
     SettingSymbolPlayer settingSymbolPlayer = new SettingSymbolPlayer ();
+
+    /**
+     * Create Buttons for the TicTacToe fields, tag them with ActionListener
+     * and add them to the panel shown in the centre of the display window
+     */
     TicTacToePanel(){
 
+        //filling the fieldStatus list with 0 from 0 to 9
         for (int i = 0; i<=9; i++) {
             fieldStatus.add ( 0 );
         }
 
         panel = new JPanel (  );
+        //using the GridLayout <= just a 3x3 field filled with buttons
         panel.setLayout ( new GridLayout ( 3,3 ) );
 
-
+        /*
+        creating the JButtons for each Button
+        creating ActionListener for each Button
+        adding Button to panel (GridLayout)
+        */
             fieldOne = new JButton ();
             fieldOne.addActionListener ( new ActionFieldOne() );
-            add ( fieldOne );
+            panel.add( fieldOne );
             fieldTwo = new JButton ();
             fieldTwo.addActionListener ( new ActionFieldTwo() );
-            add ( fieldTwo );
+            panel.add( fieldTwo );
             fieldThree = new JButton ();
             fieldThree.addActionListener ( new ActionFieldThree() );
-            add ( fieldThree );
+            panel.add ( fieldThree );
             fieldFour = new JButton ();
             fieldFour.addActionListener ( new ActionFieldFour() );
-            add ( fieldFour );
+            panel.add ( fieldFour );
             fieldFive = new JButton ();
             fieldFive.addActionListener ( new ActionFieldFive() );
-            add ( fieldFive );
+            panel.add ( fieldFive );
             fieldSix = new JButton ();
             fieldSix.addActionListener ( new ActionFieldSix() );
-            add ( fieldSix );
+            panel.add ( fieldSix );
             fieldSeven = new JButton ();
             fieldSeven.addActionListener ( new ActionFieldSeven() );
-            add ( fieldSeven );
+            panel.add ( fieldSeven );
             fieldEight = new JButton ();
             fieldEight.addActionListener ( new ActionFieldEight() );
-            add ( fieldEight );
+            panel.add ( fieldEight );
             fieldNine = new JButton ();
             fieldNine.addActionListener ( new ActionFieldNine() );
-            add ( fieldNine );
+            panel.add ( fieldNine );
 
-        panel.add( fieldOne );
-        panel.add( fieldTwo );
-        panel.add( fieldThree );
-        panel.add( fieldFour );
-        panel.add( fieldFive );
-        panel.add( fieldSix );
-        panel.add( fieldSeven );
-        panel.add( fieldEight );
-        panel.add( fieldNine );
+
 
         add(panel, BorderLayout.CENTER);
 
@@ -79,6 +82,9 @@ public class TicTacToePanel extends JPanel {
 
     }
 
+    /**
+     * The ActionEvents for each ActionListener
+     */
     private class ActionFieldOne implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent event) {

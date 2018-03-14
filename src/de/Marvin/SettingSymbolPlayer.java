@@ -10,7 +10,12 @@ public class SettingSymbolPlayer {
     private int firstRound = 0;
 
 
-
+    /**
+     * decides if it is the turn of PlayerOne or PlayerTwo
+     * @param fieldPressed
+     * becomes the local variable pressedField, needed to
+     * sign the clicked file with X or O
+     */
     public void PlayerOneOrTwo(int fieldPressed){
 
         ListInitial ();
@@ -24,6 +29,10 @@ public class SettingSymbolPlayer {
 
     }
 
+    /**
+     * filling the SymbolSet ArrayList in the first round
+     * so it could be changed in every turn
+     */
     public void ListInitial(){
 
         if ( firstRound == 0){
