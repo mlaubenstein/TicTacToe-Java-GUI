@@ -27,6 +27,7 @@ public class SettingSymbolPlayer {
         }
         GetSymbolPlayer(SymbolSet);
 
+
     }
 
     /**
@@ -44,41 +45,42 @@ public class SettingSymbolPlayer {
     }
 
     public List<Integer> SettingSymbolPlayer1(){
-        SymbolSet.add(0,1);
+        SymbolSet.set (0,0);
 
         switch (pressedField){
-            case 1: SymbolSet.add ( 1,1 );
-            case 2: SymbolSet.add ( 2,1 );
-            case 3: SymbolSet.add ( 3,1 );
-            case 4: SymbolSet.add ( 4,1 );
-            case 5: SymbolSet.add ( 5,1 );
-            case 6: SymbolSet.add ( 6,1 );
-            case 7: SymbolSet.add ( 7,1 );
-            case 8: SymbolSet.add ( 8,1 );
-            case 9: SymbolSet.add ( 9,1 );
+            case 1: SymbolSet.set ( 1,1 );break;
+            case 2: SymbolSet.set ( 2,1 );break;
+            case 3: SymbolSet.set ( 3,1 );break;
+            case 4: SymbolSet.set ( 4,1 );break;
+            case 5: SymbolSet.set ( 5,1 );break;
+            case 6: SymbolSet.set ( 6,1 );break;
+            case 7: SymbolSet.set ( 7,1 );break;
+            case 8: SymbolSet.set ( 8,1 );break;
+            case 9: SymbolSet.set ( 9,1 );break;
         }
         return SymbolSet;
     }
     public List<Integer> SettingSymbolPlayer2(){
 
-        SymbolSet.add(0,2);
+        SymbolSet.set (0,1);
 
 
         switch (pressedField){
-            case 1: SymbolSet.add ( 1,2 );
-            case 2: SymbolSet.add ( 2,2 );
-            case 3: SymbolSet.add ( 3,2 );
-            case 4: SymbolSet.add ( 4,2 );
-            case 5: SymbolSet.add ( 5,2 );
-            case 6: SymbolSet.add ( 6,2 );
-            case 7: SymbolSet.add ( 7,2 );
-            case 8: SymbolSet.add ( 8,2 );
-            case 9: SymbolSet.add ( 9,2 );
+            case 1: SymbolSet.set ( 1,2 );break;
+            case 2: SymbolSet.set ( 2,2 );break;
+            case 3: SymbolSet.set ( 3,2 );break;
+            case 4: SymbolSet.set ( 4,2 );break;
+            case 5: SymbolSet.set ( 5,2 );break;
+            case 6: SymbolSet.set ( 6,2 );break;
+            case 7: SymbolSet.set ( 7,2 );break;
+            case 8: SymbolSet.set ( 8,2 );break;
+            case 9: SymbolSet.set ( 9,2 );break;
         }
         return SymbolSet;
     }
 
     private void GetSymbolPlayer(List<Integer> symbolSet) {
+        SymbolGet.clear ();
         for (Integer ListElement : symbolSet){
             SymbolGet.add ( ListElement );
         }

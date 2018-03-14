@@ -6,6 +6,7 @@ public class StatusField {
     private List<Boolean> AlreadyPressed = new ArrayList<> ();
     private SettingSymbolPlayer settingSymbolPlayer = new SettingSymbolPlayer ();
 
+
     /**
      * Checking if the field is already pressed
      * @param fieldPressed
@@ -18,41 +19,42 @@ public class StatusField {
         }
 
 
-        AlreadyPressed.add ( 0, true );
+        AlreadyPressed.set( 0, true );
 
         if (fieldPressed == 1) {
-            AlreadyPressed.add ( 1, true );
+            AlreadyPressed.set ( 1, true );
         }
         else if (fieldPressed == 2) {
-            AlreadyPressed.add ( 2, true );
+            AlreadyPressed.set ( 2, true );
         }
         else if (fieldPressed == 3) {
-            AlreadyPressed.add ( 3, true );
+            AlreadyPressed.set ( 3, true );
         }
         else if (fieldPressed == 4) {
-            AlreadyPressed.add ( 4, true );
+            AlreadyPressed.set ( 4, true );
         }
         else if (fieldPressed == 5) {
-            AlreadyPressed.add ( 5, true );
+            AlreadyPressed.set ( 5, true );
         }
         else if (fieldPressed == 6) {
-                AlreadyPressed.add ( 6, true );
+                AlreadyPressed.set ( 6, true );
         }
         else if (fieldPressed == 7) {
-            AlreadyPressed.add ( 7, true );
+            AlreadyPressed.set ( 7, true );
         }
         else if (fieldPressed == 8 ) {
-            AlreadyPressed.add ( 8, true );
+            AlreadyPressed.set ( 8, true );
         }
         else if ( fieldPressed == 9) {
-            AlreadyPressed.add ( 9, true );
+            AlreadyPressed.set ( 9, true );
         }
 
          settingSymbolPlayer.PlayerOneOrTwo (fieldPressed);
 
+
     }
 
-
-
-
+    public List<Integer> SymbolGet() {
+        return settingSymbolPlayer.GettingSymbolPlayer ();
+    }
 }

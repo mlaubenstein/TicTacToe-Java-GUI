@@ -90,7 +90,8 @@ public class TicTacToePanel extends JPanel {
         public void actionPerformed(ActionEvent event) {
 
             statusField.Input ( 1 );
-            for (Integer ListElement : settingSymbolPlayer.GettingSymbolPlayer ()){
+            fieldStatus.clear ();
+            for (Integer ListElement : statusField.SymbolGet ()){
                 fieldStatus.add ( ListElement );
             }
             if (fieldStatus.get ( 1 ) == 1) {
@@ -106,7 +107,8 @@ public class TicTacToePanel extends JPanel {
         public void actionPerformed(ActionEvent event) {
 
             statusField.Input ( 2 );
-            for (Integer ListElement : settingSymbolPlayer.GettingSymbolPlayer ()){
+            fieldStatus.clear ();
+            for (Integer ListElement : statusField.SymbolGet ()){
                 fieldStatus.add ( ListElement );
             }
             if (fieldStatus.get ( 2 ) == 1) {
@@ -123,7 +125,8 @@ public class TicTacToePanel extends JPanel {
         public void actionPerformed(ActionEvent event) {
 
             statusField.Input ( 3 );
-            for (Integer ListElement : settingSymbolPlayer.GettingSymbolPlayer ()){
+            fieldStatus.clear ();
+            for (Integer ListElement : statusField.SymbolGet ()){
                 fieldStatus.add ( ListElement );
             }
             if (fieldStatus.get ( 3 ) == 1) {
@@ -138,7 +141,8 @@ public class TicTacToePanel extends JPanel {
         public void actionPerformed(ActionEvent event) {
 
             statusField.Input ( 4 );
-            for (Integer ListElement : settingSymbolPlayer.GettingSymbolPlayer ()){
+            fieldStatus.clear ();
+            for (Integer ListElement : statusField.SymbolGet ()){
                 fieldStatus.add ( ListElement );
             }
             if (fieldStatus.get ( 4 ) == 1) {
@@ -153,7 +157,8 @@ public class TicTacToePanel extends JPanel {
         public void actionPerformed(ActionEvent event) {
 
             statusField.Input ( 5 );
-            for (Integer ListElement : settingSymbolPlayer.GettingSymbolPlayer ()){
+            fieldStatus.clear ();
+            for (Integer ListElement : statusField.SymbolGet ()){
                 fieldStatus.add ( ListElement );
             }
             if (fieldStatus.get ( 5 ) == 1) {
@@ -168,7 +173,8 @@ public class TicTacToePanel extends JPanel {
         public void actionPerformed(ActionEvent event) {
 
             statusField.Input ( 6 );
-            for (Integer ListElement : settingSymbolPlayer.GettingSymbolPlayer ()){
+            fieldStatus.clear ();
+            for (Integer ListElement : statusField.SymbolGet ()){
                 fieldStatus.add ( ListElement );
             }
             if (fieldStatus.get ( 6 ) == 1) {
@@ -182,7 +188,8 @@ public class TicTacToePanel extends JPanel {
         public void actionPerformed(ActionEvent event) {
 
             statusField.Input ( 7 );
-            for (Integer ListElement : settingSymbolPlayer.GettingSymbolPlayer ()){
+            fieldStatus.clear ();
+            for (Integer ListElement : statusField.SymbolGet ()){
                 fieldStatus.add ( ListElement );
             }
             if (fieldStatus.get ( 7 ) == 1) {
@@ -197,7 +204,8 @@ public class TicTacToePanel extends JPanel {
         public void actionPerformed(ActionEvent event) {
 
             statusField.Input ( 8 );
-            for (Integer ListElement : settingSymbolPlayer.GettingSymbolPlayer ()){
+            fieldStatus.clear ();
+            for (Integer ListElement : statusField.SymbolGet ()){
                 fieldStatus.add ( ListElement );
             }
             if (fieldStatus.get ( 8 ) == 1) {
@@ -212,7 +220,8 @@ public class TicTacToePanel extends JPanel {
         public void actionPerformed(ActionEvent event) {
 
             statusField.Input ( 9 );
-            for (Integer ListElement : settingSymbolPlayer.GettingSymbolPlayer ()){
+            fieldStatus.clear ();
+            for (Integer ListElement : statusField.SymbolGet ()){
                 fieldStatus.add ( ListElement );
             }
             if (fieldStatus.get ( 9 ) == 1) {
