@@ -11,6 +11,7 @@ public class TicTacToePanel extends JPanel {
 
     public List<Integer> fieldStatus = new ArrayList<> ( );
     private JPanel panel;
+    private JPanel paneldisplay;
     private JTextField Status;
     private JButton fieldOne;
     private JButton fieldTwo;
@@ -21,9 +22,12 @@ public class TicTacToePanel extends JPanel {
     private JButton fieldSeven;
     private JButton fieldEight;
     private JButton fieldNine;
+    private JTextField display;
+    private int i;
 
     StatusField statusField = new StatusField ();
     SettingSymbolPlayer settingSymbolPlayer = new SettingSymbolPlayer ();
+    TicTacToeAnzeige ticTacToeAnzeige = new TicTacToeAnzeige ();
 
     /**
      * Create Buttons for the TicTacToe fields, tag them with ActionListener
@@ -35,8 +39,17 @@ public class TicTacToePanel extends JPanel {
         for (int i = 0; i<=9; i++) {
             fieldStatus.add ( 0 );
         }
-
         panel = new JPanel (  );
+        paneldisplay = new JPanel (  );
+
+        display = new JTextField (  );
+        display.setText ( ticTacToeAnzeige.setPlayer ());
+        paneldisplay.add ( display );
+
+        add(paneldisplay, BorderLayout.NORTH);
+
+
+
         //using the GridLayout <= just a 3x3 field filled with buttons
         panel.setLayout ( new GridLayout ( 3,3 ) );
 
@@ -74,10 +87,7 @@ public class TicTacToePanel extends JPanel {
             panel.add ( fieldNine );
 
 
-
-        add(panel, BorderLayout.CENTER);
-
-
+            add(panel, BorderLayout.SOUTH);
 
 
     }

@@ -89,4 +89,7 @@ public class SettingSymbolPlayer {
         return SymbolGet;
     }
 
+    public Integer getSymbolSet() {
+        return SymbolSet.get ( 0 );
+    }
 }

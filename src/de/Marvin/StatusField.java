@@ -15,7 +15,7 @@ public class StatusField {
     public void Input( int fieldPressed) {
 
         for( int i = 0; i<=9; i++ ){
-        AlreadyPressed.add(false);
+            AlreadyPressed.add(false);
         }
 
 
@@ -37,7 +37,7 @@ public class StatusField {
             AlreadyPressed.set ( 5, true );
         }
         else if (fieldPressed == 6) {
-                AlreadyPressed.set ( 6, true );
+            AlreadyPressed.set ( 6, true );
         }
         else if (fieldPressed == 7) {
             AlreadyPressed.set ( 7, true );
@@ -49,7 +49,7 @@ public class StatusField {
             AlreadyPressed.set ( 9, true );
         }
 
-         settingSymbolPlayer.PlayerOneOrTwo (fieldPressed);
+        settingSymbolPlayer.PlayerOneOrTwo (fieldPressed);
 
 
     }
